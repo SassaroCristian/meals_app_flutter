@@ -41,13 +41,12 @@ class MealsScreen extends StatelessWidget {
           ],
         ),
       );
-    } else if (meals.isNotEmpty) {
-      return Scaffold(
-        appBar: AppBar(
-          title: Text(title),
-        ),
-        body: content,
-      );
     }
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(title),
+      ),
+      body: content,
+    );
   }
 }
